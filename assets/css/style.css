@@ -45,6 +45,9 @@ hr {
  margin: 15px auto 0 auto;
 }
 
+.overflow-hidden {
+	overflow: hidden;
+}
 
 .bg-default {
 	background-color: #333;
@@ -140,14 +143,6 @@ header {
 	padding: 20px 40px 20px 0px;
 }
 
-.my-nav {
-	margin-bottom: 15px;
-	/*border: 1px solid blue;	 */
-	width: 100%;
-	float: left;
-	
-}
-
 .my-nav ul {
 	list-style: none;
 	margin-bottom: 0;
@@ -155,11 +150,10 @@ header {
 }
 
 .my-nav ul>li {
-	/*text-align: right;*/
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	padding-right: 35px; 
-	/*display: inline-block;*/
+	padding-right: 35px;
+	padding-bottom: 30px; 
 	float: left;
 
 }
@@ -170,16 +164,13 @@ header {
 
 .my-nav ul>li>a {
 	font-weight: 500;
+	text-decoration: none;
 	padding-bottom: 6px; 
-
 }
 
 .my-nav ul>li>a:hover {
-	text-decoration: none;
 	color: #ffc40e;
 }
-
-
 
 
 /*--- navbar animation ---*/
@@ -306,6 +297,7 @@ header {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 	position: absolute;
 
 	opacity: 0.3;
@@ -556,67 +548,54 @@ header {
 	.nav-toggle {
 		display: block;
 		position: fixed;
+		z-index: 500;
 	}
 
-	#myNav .my-nav-active {
-		display: block;
-		position: fixed;
-		background-color: #000;
-		z-index: 550;
+	.my-nav {
+		opacity: 0;
 		transition: 0.3s;
+		position: fixed;
+		display: absolute;
+		top: 0;
+		left: 0;
+		background-color: #000;
+		height: 100%;
 	}
 
-	#myNav .my-nav-active ul {
+	.my-nav-active:before {
+		content: "";
+		display:block;
+		width:80px;
+		height: 51px;
+		background: url(../images/logo-sati.png);
+		background-size: cover;
+		margin-top: 20px;
+		margin-left: 40px;
+		margin-bottom: 30px;
+
+	}
+	
+	#myNav .my-nav-active {
+		opacity: 1;
+	}
+
+	.my-nav ul {
+		padding-top: 20%;
+		margin-bottom: 0;
 		float: right;
-
 	}
-	#myNav .my-nav-active ul>li {
-		display: block;
-		float: none;
+
+	.my-nav ul>li {
 		width: 100%;
-	
-	}
-
-	#myNav .my-nav-active ul>li>a {
-		text-align: right;
+		padding: 10px 0 10px 40px;
+		float: left;
 
 	}
-
-
-/*
-
-										.my-nav ul {
-											list-style: none;
-											margin-bottom: 0;
-											float: right;
-										}
-
-										.my-nav ul>li {
-	
-											text-transform: uppercase;
-											letter-spacing: 1px;
-											padding-right: 35px; 
-	
-											float: left;
-
-										}
-
-										.my-nav ul li:last-child{
-											padding-right: 0; 
-										}
-
-										.my-nav ul>li>a {
-											font-weight: 500;
-											padding-bottom: 6px; 
-
-										}
-
-										.my-nav ul>li>a:hover {
-											text-decoration: none;
-											color: #ffc40e;
-										}
-*/
-
+	.my-nav ul>li>a {
+		font-weight: 500;
+		text-decoration: none;
+		padding-bottom: 6px; 
+	}
 
 }
 
@@ -660,7 +639,8 @@ header {
 	}
 
 	.my-nav ul>li {
-		padding-right: 22px; 
+		padding-right: 22px;
+		padding-bottom: 20px;
 	}
 
 	.my-nav ul>li:last-child {
