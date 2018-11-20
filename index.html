@@ -34,7 +34,7 @@
     <!-- HEADER ================ -->
     <header>
         <div class="container-fluid">
-            <div class="row align-items-center">
+            <div class="row align-items-end">
                 <div class="col-5 col-md-2 offset-md-1">
                     <div class="navbar-brand logo img-fluid">
                         <a href="#">
@@ -116,20 +116,35 @@
                     </div>
                 </div>
 
+                
+
+
                 <!-- NAVBAR ================ -->
-                <div class="col-md-6 offset-md-2 d-none d-md-block">
-                    <nav class="my-nav">
+
+                <div class="nav-toggle">
+                    <div class="my-toggler"></div>
+                </div>
+
+                <div class="col-md-7 offset-md-1 d-none d-md-block">
+                    <nav class="my-nav clearfix">
                         <ul>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">Contacts</a></li>
+                            <li><a class="nav-hover" href="#">Home</a></li>
+                            <li><a class="nav-hover" href="#">Products</a></li>
+                            <li><a class="nav-hover" href="#">About</a></li>
+                            <li><a class="nav-hover" href="#">FAQs</a></li>
+                            <li><a class="nav-hover"href="#">Contacts</a></li>
                         </ul>
                     </nav>
                 </div>
 
 
             </div>
+
+            
+            <div class="nav-toggle">
+                <div class="my-toggler"></div>
+            </div>
+
         </div>
     </header>
 
@@ -139,9 +154,9 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2 col-xl-10 offset-xl-1">
                 <div class="wrapper-center">
-                    <h1>Spark Apps Technologies Inc.</h1>
-                    <h4>We are an <span>ICT Solutions Provider</span>, committed in giving excellent products and
-                        services for your business needs.</p>
+                    <h1>ICT Solutions Provider</h1>
+                    <h4><span>Spark Apps Technologies Inc.</span> is committed in giving excellent products and
+                        services for your business needs.</h4>
                 </div>
             </div>
         </div>
@@ -149,10 +164,10 @@
             <div class="col-lg-8 offset-lg-2 d-flex justify-content-center">
                 <div class="">
                     <div class="btn-wrap">
-                        <a href="#" class="my-btn my-btn-1">Why Us?</a>
+                        <a href="#" class="my-btn my-btn-1">See Products Offered</a>
                     </div>
                     <div class="btn-wrap">
-                        <a href="#" class="my-btn my-btn-2">See our Products</a>
+                        <a href="#" class="my-btn my-btn-2">Why Us?</a>
                     </div>
                 </div>
             </div>
@@ -175,60 +190,98 @@
         <section class="featured">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 offset-lg-1">
+                    <div class="col-12 col-lg-8 offset-lg-2 tac">
                         <span class="label">featured</span>
                     </div>
-                    <div class="col-lg-5 offset-lg-1">
-                        <div class="row no-gutters">
-                            <div class="col-md-6">
+
+                    <div class="col-12 col-lg-10 offset-lg-1 tac">
+                        <h3 class="label-subtitle">What's New?</h3>
+                    </div>
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="row no-gutters card-group">
+                            <div class="col-lg-3 col-md-6">
                                 <div class="card">
-                                    <img src="assets/images/featured/thumb_dellworkstation.jpg" class="card-img-top img-fluid">
+                                    <img src="assets/images/featured/thumb_dellworkstation.jpg" class="card-img-top img-fluid" alt="Dell Precision Mobile Workstations">
                                     <div class="card-body">
-                                        <h5 class="card-title">Title</h5>
-                                        <p class="card-text">A quick brown fox jumps over the lazy dog.</p>
-                                        
+                                        <div class="card-body-wrapper">           
+                                            <h5 class="card-title">Dell Precision Mobile Workstations</h5>
+                                            <p class="card-text">Featuring faster memory, professional-grade graphics and the latest 7th Gen Intel Core or Xeon processors.</p>                    
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-3 col-md-6">
                                 <div class="card">
-                                    <img src="assets/images/featured/thumb_HP-z2.jpg" class="card-img-top img-fluid">
+                                    <img src="assets/images/featured/thumb_HP-z2.jpg" class="card-img-top img-fluid" alt="HP Z2 Mini Workstation">
                                     <div class="card-body">
-                                        <h5 class="card-title">Title</h5>
-                                        <p class="card-text">A quick brown fox jumps over the lazy dog.</p>
-                                        
+                                        <div class="card-body-wrapper">           
+                                            <h5 class="card-title">HP Z2 Mini Workstation</h5>
+                                            <p class="card-text">A revolutionary mini PC for CAD that delivers breakthrough power and versatility in a small, elegant design.</p>                    
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-3 col-md-6">
                                 <div class="card">
-                                    <img src="assets/images/featured/thumb_DJIinspire2.jpg" class="card-img-top img-fluid">
+                                    <img src="assets/images/featured/thumb_DJIinspire2.jpg" class="card-img-top img-fluid" alt="DJI Inspire 2">
                                     <div class="card-body">
-                                        <h5 class="card-title">Title</h5>
-                                        <p class="card-text">A quick brown fox jumps over the lazy dog.</p> 
+                                        <div class="card-body-wrapper">           
+                                            <h5 class="card-title">DJI Inspire 2</h5>
+                                            <p class="card-text">The next evolution of professional aerial cinematography. New cameras, sensors, and intelligent features make the Inspire 2 the definitive aerial cinematography solution.</p>                    
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="card">
-                                    <img src="assets/images/featured/thumb_hpt380.jpg"" class="card-img-top img-fluid">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card align-items-center">
+                                    <img src="assets/images/featured/thumb_hpt380.jpg"" class="card-img-top img-fluid" alt="HP DesignJet T830">
                                     <div class="card-body">
-                                        <h5 class="card-title">Title</h5>
-                                        <p class="card-text">A quick brown fox jumps over the lazy dog.</p>
+                                        <div class="card-body-wrapper">           
+                                            <h5 class="card-title">HP DesignJet T830</h5>
+                                            <p class="card-text"> The industry's most affordable, compact and transportable Wi-Fi integrated large-format MFP.</p>                    
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="col-lg-5">
-
-                            <h3>What's New?</h3>
+        <section class="to-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <h2>No Customer Left Behind</h2>
+                        <p>SPARK APPS don’t leave the customers behind. Your success becomes our success. We listen to your needs and effectively provide ICT solutions that works for you.</p>
+                        <div class="btn-wrap">
+                            <a href="#" class="my-btn my-btn-2">Learn More</a>
+                        </div>
                     </div>
                 </div>
-
             </div>
+        </section>
 
+        <section class="products">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-2 tac">
+                        <span class="label">Products Offered</span>
+                    </div>
+
+                    <div class="col-12 col-lg-10 offset-lg-1 tac">
+                        <h3 class="label-subtitle">Check the latest Technologies</h3>
+                    </div>
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="row">
+                            <div class="col-md-4 box1"></div>
+                            <div class="col-md-4 box2"></div>
+                            <div class="col-md-4 box3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
