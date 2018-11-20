@@ -45,67 +45,6 @@ hr {
  margin: 15px auto 0 auto;
 }
 
-.nav-toggle {
-	display: none;
-	width: 40px;
-	height: 40px;
-	background-color: pink;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	cursor: pointer;
-	background-color: #333;
-	border-radius: 5px;	
-}
-
-
-.my-toggler {
-	width: 25px;
-	height: 2px;
-	background-color: #fff;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	transition: .5s;
-	border-radius: 2px;
-}
-
-.my-toggler:before,
-.my-toggler:after {
-	content: "";
-	position: absolute;
-	width: 25px;
-	height: 2px;
-	background-color: #fff;
-	transition: .5s;
-	border-radius: 2px;
-}
-
-.my-toggler:before {
-	top:-9px;
-}
-
-
-.my-toggler:after {
-	top: 9px;
-
-}
-
-.nav-active .my-toggler {
-	background-color: rgba(0, 0, 0, 0);
-}
-
-.nav-active .my-toggler:before {
-	transform: rotate(45deg);
-	top:0;
-}
-
-.nav-active .my-toggler:after {
-	transform: rotate(135deg);
-	top:0;
-}
 
 .bg-default {
 	background-color: #333;
@@ -113,22 +52,23 @@ hr {
 
 
 .btn-wrap {
-	padding: 30px 10px;
+	/*padding: 30px 10px;*/
 	color: #fcfcfc;
 	text-align: center;
 	/*margin: 0 auto;*/
+	margin: 15px 0;
 }
 
 .btn-wrap a {
 	text-decoration: none;
-	float: left;
+	/*float: left;*/
 	font-size: 1.1rem;
 	/* letter-spacing: 1px; */
 }
 
 
 .my-btn {
-	padding: 10px 0;
+	padding: 10px 10px;
 	width: 200px;
 	display: block;
 
@@ -145,7 +85,6 @@ hr {
 	color: #14294E;
 	border: 2px solid #fcfcfc;
 	background-color: #fcfcfc;
-
 }
 
 .my-btn:hover {
@@ -169,8 +108,9 @@ hr {
 }
 
 .label-subtitle {
+	font-weight: 600;
 	margin: 30px 0 20px 0;
-	font-size: 2.5em;
+	font-size: 2em;
 	color: #14294E;
 }
 
@@ -204,24 +144,23 @@ header {
 	margin-bottom: 15px;
 	/*border: 1px solid blue;	 */
 	width: 100%;
-	/*float: right;*/
+	float: left;
 	
 }
 
 .my-nav ul {
 	list-style: none;
 	margin-bottom: 0;
-	display: flex;
-    flex-wrap: wrap;
-	justify-content: flex-end;
+	float: right;
 }
 
 .my-nav ul>li {
 	/*text-align: right;*/
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	padding-right: 5%; 
-	display: inline-block;
+	padding-right: 35px; 
+	/*display: inline-block;*/
+	float: left;
 
 }
 
@@ -232,13 +171,16 @@ header {
 .my-nav ul>li>a {
 	font-weight: 500;
 	padding-bottom: 6px; 
-	float: left;
+
 }
 
 .my-nav ul>li>a:hover {
 	text-decoration: none;
 	color: #ffc40e;
 }
+
+
+
 
 /*--- navbar animation ---*/
 
@@ -277,6 +219,71 @@ header {
   .nav-active  {
 	color: #ffc40e;
   }
+
+
+/* ---- nav toggler ---- */
+
+.nav-toggle {
+	display: none;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 95%;
+	transform: translate(-100%, 50%);
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 5px;	
+	margin-right: 40px;
+}
+
+
+.my-toggler {
+	width: 25px;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: .5s;
+	border-radius: 2px;
+}
+
+.my-toggler:before,
+.my-toggler:after {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 2px;
+	background-color: #fff;
+	transition: .5s;
+	border-radius: 2px;
+}
+
+.my-toggler:before {
+	top:-9px;
+}
+
+
+.my-toggler:after {
+	top: 9px;
+
+}
+
+.nav-active .my-toggler {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-active .my-toggler:before {
+	transform: rotate(45deg);
+	top:0;
+}
+
+.nav-active .my-toggler:after {
+	transform: rotate(135deg);
+	top:0;
+}
 
 
 
@@ -359,7 +366,7 @@ header {
 
 .featured {
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 60px;
 }
 
 .featured .card {
@@ -423,10 +430,51 @@ header {
 
 /*ABOUT*/
 .to-about {
-	height: 200px;
-	background-color: blue;
-	text-align: center;
+	padding: 60px 10px;
+	background-color: steelblue;
+	text-align: left;
+
+	background: url(../images/hand-shake.jpg) center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	position: relative;
 }
+
+
+.about-content span{
+	display: block;
+}
+
+.about-content h2 {
+	color: #ffc40e;
+}
+
+.about-content p {
+	color: #fcfcfc;
+	margin-bottom: 18px;
+}
+
+
+.about-content a {
+
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+.my-btn-3 {
+	/*display: block;*/
+	padding-bottom: 5px;
+	color: #fcfcfc;
+	border-bottom: 2px solid #ffc40e;
+	transition: 0.2s;
+}
+
+.my-btn-3:hover {
+	color: #ffc40e;
+}
+
 
 /*PRODUCTS*/
 .products {
@@ -439,6 +487,7 @@ header {
 .box2 {
 	height: 300px;
 	background-color: pink;
+
 }
 
 .box3 {
@@ -506,7 +555,68 @@ header {
 
 	.nav-toggle {
 		display: block;
+		position: fixed;
 	}
+
+	#myNav .my-nav-active {
+		display: block;
+		position: fixed;
+		background-color: #000;
+		z-index: 550;
+		transition: 0.3s;
+	}
+
+	#myNav .my-nav-active ul {
+		float: right;
+
+	}
+	#myNav .my-nav-active ul>li {
+		display: block;
+		float: none;
+		width: 100%;
+	
+	}
+
+	#myNav .my-nav-active ul>li>a {
+		text-align: right;
+
+	}
+
+
+/*
+
+										.my-nav ul {
+											list-style: none;
+											margin-bottom: 0;
+											float: right;
+										}
+
+										.my-nav ul>li {
+	
+											text-transform: uppercase;
+											letter-spacing: 1px;
+											padding-right: 35px; 
+	
+											float: left;
+
+										}
+
+										.my-nav ul li:last-child{
+											padding-right: 0; 
+										}
+
+										.my-nav ul>li>a {
+											font-weight: 500;
+											padding-bottom: 6px; 
+
+										}
+
+										.my-nav ul>li>a:hover {
+											text-decoration: none;
+											color: #ffc40e;
+										}
+*/
+
 
 }
 
@@ -548,6 +658,14 @@ header {
 		font-size: 1.2rem;
 		line-height: 1.2rem;
 	}
+
+	.my-nav ul>li {
+		padding-right: 22px; 
+	}
+
+	.my-nav ul>li:last-child {
+		padding-right: 0;
+	}
 }
 
 /*Large Screens Styles*/
@@ -557,17 +675,17 @@ header {
 	}
 
 	.banner h1 {
-		font-size: 4em;
+		font-size: 3em;
 	}
 
 	.banner h4 {
 		padding-top: 10px;
-		font-size: 1.3em;
+		font-size: 1.2em;
 		font-weight: 400;
 	}
 
 	.wrapper-center {
-		padding-top: 15%;
+		padding-top: 18%;
 	}
 
 	.logo svg {
