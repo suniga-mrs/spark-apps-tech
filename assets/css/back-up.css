@@ -40,11 +40,6 @@ body {
 	fill: #ffc40e;
 }
 
-
-/*.cls-3:hover, .cls-2:hover {
-	fill: rgba(255, 255, 255, 0.8);
-}*/
-
 .tac {
 	text-align: center;
 }
@@ -545,36 +540,6 @@ header {
 	border-bottom: 4px solid #136cfe;
 }
 
-.p-logo-container {
-	text-align: center;
-	/*margin-top: 20px;*/
-	border-left: 4px solid white;
-	height: 100%;
-}
-
-.partners h2 {
-	font-size: 3em;
-    color: #fcfcfc;
-}
-
-.partners .label-text {
-	padding-top: 10px;
-	/*text-align: center;*/
-	font-size: 0.8em;
-	line-height: 1.1em;
-	color: #fcfcfc;
-}
-
-
-.partners img {
-	max-height: 40px;
-	margin: 10px 20px;
-}
-
-.parnters .left-container {
-	padding-right: 20px;
-}
-
 /*CONTACT*/
 
 .contact {
@@ -588,6 +553,7 @@ footer {
 	height: 160px;
 	background-color: #14294E;
 }
+
 
 .footer-content {
 	padding-top: 20px;
@@ -647,7 +613,7 @@ footer {
 	}
 
 	.my-nav ul {
-		padding-top: 40%;
+		padding-top: 20%;
 		margin-bottom: 0;
 		float: right;
 	}
@@ -718,10 +684,6 @@ footer {
 
 	.featured {
 		padding-top: 50px;
-		padding-bottom: 50px;
-	}
-
-	.products {
 		padding-bottom: 50px;
 	}
 
@@ -862,7 +824,7 @@ footer {
 	}
 
 	.pointer-down {
-		padding-top: 9%;
+		padding-top: 10%;
 	}
 
 	.featured {
