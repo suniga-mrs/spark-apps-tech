@@ -736,6 +736,10 @@ footer {
 
 /*Mobile Styles*/
 @media only screen and (max-width: 425px) {
+	.tac-mobile {
+		text-align: center;
+	}
+
 	.nav-toggle {
 		/*margin-top: 20px;*/
 		display: block;
@@ -891,14 +895,24 @@ footer {
 	}
 
 	.about-content p {
+		border: 1px solid red;
 		margin-bottom: 18px;
 		font-size: 1em;
 	}
 
-	.contact p {
-	font-size: 0.9rem;
-}
 
+	.contact p {
+		font-size: 0.9rem;
+
+	}
+
+	.contact  .contact-info p {
+		text-align: center;
+		display: block;
+		font-weight: 500;
+		margin: 0;
+	}
+	
 	.contact form {
 		width: 100%;
 	}
