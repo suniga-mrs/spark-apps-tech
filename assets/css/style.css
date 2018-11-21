@@ -113,7 +113,7 @@ hr {
 	/*height: 40px;*/
 	text-transform: uppercase;
 	border-bottom: 4px solid #14294E;
-	/*border-radius: 5px;*/
+	color: #333;
 	font-weight: 500;
 	font-size: 0.8em;
 	letter-spacing: 2px;
@@ -370,7 +370,7 @@ header {
 /* FEATURED */
 
 .featured {
-	padding: 100px 0;
+	padding: 100px 0 50px 0;
 	background-color: #fcfcfc;
 
 }
@@ -557,7 +557,7 @@ header {
     color: #fcfcfc;
 }
 
-.partners .label-text {
+.label-text {
 	padding-top: 10px;
 	/*text-align: center;*/
 	font-size: 0.8em;
@@ -578,8 +578,136 @@ header {
 /*CONTACT*/
 
 .contact {
-	height: 400px;
+	padding: 50px 0;
+	height: 100%;
 	background-color: #fcfcfc;
+	color: #14294E;
+
+	background: url(../images/spark.png) right bottom no-repeat;
+	background-size: 35%;	
+	background-attachment: fixed;
+}
+
+.contact .label-text {
+	padding-top: 10px;
+	/*text-align: center;*/
+	font-size: 1em;
+	line-height: 1.4em;
+	color: #666;
+	font-style: italic;
+	padding-left: 15px;
+	border-left: 5px solid #f2f2f2;
+}
+
+.contact h5 {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: #666;
+	font-weight: 500;
+	margin-bottom: 5px;
+	/*margin-top: 15px;*/
+}
+
+.contact-icon {
+	display: inline-block;
+	background-color: #14294E;
+	padding: 5px 7px;
+	font-size: 0.7rem;
+	border-radius: 7px;
+	color: #fcfcfc;
+	margin-right: 8px;
+	float: left;
+	/*min-width: 100%;*/
+}
+
+.contact-info {
+	margin-bottom: 5px;	
+}
+
+.contact-info p {
+	/*padding-top: 10px;*/
+	/*display: inline;*/
+	float: left;
+	font-weight: 500;
+	font-size: 1rem;
+
+
+
+}
+
+.contact-details {
+	font-size: 0.9rem;
+	line-height: 1.2rem;
+}
+
+.social-group  {
+	margin-top: 15px;
+}
+
+.social-links {
+	width: 30px;
+	height: 30px;
+	background-color: pink;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+
+/*CONTACT FORM*/
+
+.contact form {
+	display: block;
+	width: 90%;
+	background-color: #fcfcfc;
+	border-radius: 20px;
+
+
+}
+
+.contact fieldset {
+	padding: 20px;
+	width: 100%;
+	display: block;
+	border: 1px solid #f1f1f1;
+	border-radius: 20px;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.contact form span{
+	display: block;
+	margin-top: -13px;
+}
+
+.contact input, 
+.contact textarea {
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.contact input {
+	height: 2em;
+}
+
+.contact label {
+	font-size: 0.8em;
+	margin-bottom: 2px;
+}
+
+.contact input[class="form-control"] {
+	box-shadow: 1px 1px 2px inset rgba(0, 0, 0, 0.1);
+
+}
+
+.contact .my-btn-4 {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 15px;
+	color: #fcfcfc;
+	background-color: #136cfe;
+	border-radius: 10px;
+	border: 1px solid #136cfe;
 }
 
 
@@ -767,6 +895,32 @@ footer {
 		font-size: 1em;
 	}
 
+	.contact p {
+	font-size: 0.9rem;
+}
+
+	.contact form {
+		width: 100%;
+	}
+
+	.contact fieldset {
+		padding: 10px 10px 20px 10px;
+		width: 100%;
+		display: block;
+		border: none;
+		border-bottom: 2px solid #f1f1f1;
+		border-radius: 0;
+		box-shadow: none;
+	}
+
+	.contact legend {
+		display: none;
+	}
+
+	.contact .my-btn-4 {
+		width: 75%;
+	}
+
 	footer {
 		height: 100%;
 	}
@@ -862,7 +1016,7 @@ footer {
 	}
 
 	.pointer-down {
-		padding-top: 9%;
+		padding-top: 8%;
 	}
 
 	.featured {
