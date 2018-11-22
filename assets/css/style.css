@@ -24,9 +24,9 @@ body {
 }
 
 abbr[title] {
-  border-bottom: none;
-  cursor: inherit;
-  text-decoration: none;
+	border-bottom: none;
+	cursor: inherit;
+	text-decoration: none;
 }
 
 
@@ -347,7 +347,7 @@ nav {
 }
 
 .pointer-down {
-/*	padding-top: 15vh;*/
+	/*	padding-top: 15vh;*/
 	width: 100%;
 	text-align: center;
 }
@@ -369,7 +369,7 @@ nav {
 	font-size: 3em;
 }
 
-.section-banner  h4 {
+.section-banner h4 {
 	font-weight: 400;
 	font-size: 1.5em;
 }
@@ -409,7 +409,7 @@ header .about-banner {
 	/*border-bottom: 3px solid #ffc40e;*/
 }
 
-.about-banner h4{
+.about-banner h4 {
 	font-size: 0.5em;
 }
 
@@ -485,6 +485,72 @@ header .about-banner {
 	opacity: 1;
 	cursor: pointer;
 }
+
+
+/* =================== VIDEO CONTAINER */
+
+/* VIDEO CONTAINER */
+
+.video-wrapper {
+	text-align: center;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 4000;
+	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+	transition: opacity 0.5s cubic-bezier(0.7, 0, 0.3, 1) 45ms, transform 0.5s cubic-bezier(0.7, 0, 0.3, 1) 45ms;
+	padding: 0 2rem;
+}
+
+.open-vid {
+	opacity: 1 !important;
+	visibility: visible !important;
+	display: block;
+	transition: opacity 0.5s cubic-bezier(0.7, 0, 0.3, 1) 45ms, transform 0.5s cubic-bezier(0.7, 0, 0.3, 1) 45ms;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56%;
+	top: 20%;
+	width: 100%;
+	text-align: left;
+}
+
+.video-item {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	overflow: hidden;
+	transition: opacity 0.5s cubic-bezier(0.7, 0, 0.3, 1) 45ms, transform 0.5s cubic-bezier(0.7, 0, 0.3, 1) 45ms;
+}
+
+.close-button {
+	display: block;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 5%;
+	color: #fff;
+	font-size: 1rem;
+	padding: 5px 10px;
+	/* margin: 30px 0 10px 20px; */
+	background-color: rgba(0, 0, 0, .25);
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.close-button i {
+	text-align: center !important;
+	font-size: 1rem;
+}
+
+/* ============================== */
 
 /*PRODUCTS*/
 
@@ -798,7 +864,7 @@ footer {
 	height: 1em;
 }
 
-.copyright  {
+.copyright {
 	display: block;
 	font-size: 0.7rem;
 	color: #f2f2f2;
@@ -827,7 +893,7 @@ footer {
 	background-size: cover;
 	background-attachment: fixed;
 
-} 
+}
 
 .core-values h2 {
 	color: #fcfcfc;
@@ -843,7 +909,7 @@ footer {
 	z-index: 40;
 }
 
-.lower-split {	
+.lower-split {
 	margin-top: -5vh;
 	z-index: 20;
 }
@@ -853,7 +919,7 @@ footer {
 	/*height: 100%;*/
 	width: 90%;
 	margin: 0 auto;
-	
+
 	background-color: #fff;
 	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 	border-radius: 8px;
@@ -894,7 +960,7 @@ footer {
 
 .profile .content-text {
 	font-size: 1.1rem;
-		color: grey;
+	color: grey;
 }
 
 .profile h4 {
@@ -923,13 +989,14 @@ footer {
 	border: none;
 	width: 100%;
 	text-align: left;
-	background-color: transparent;;
+	background-color: transparent;
+	;
 	padding-left: 15px;
 	font-weight: 500;
 	color: #14294E;
 }
 
-#accordion .my-btn-5:focus{
+#accordion .my-btn-5:focus {
 	color: #136fce;
 	border: none;
 	box-shadow: none;
@@ -1039,7 +1106,7 @@ footer {
 		padding-top: 35%;
 	}
 
-	
+
 	.pointer-down {
 		padding-top: 60px;
 		padding-bottom: 20px;
@@ -1141,7 +1208,8 @@ footer {
 	.contact form {
 		width: 100%;
 		margin-bottom: 30px;
-		background: transparent;;
+		background: transparent;
+		;
 	}
 
 	.contact fieldset {
@@ -1172,10 +1240,10 @@ footer {
 	}
 
 	.partners img {
-		max-height: 30px;	
+		max-height: 30px;
 		margin: 20px 20px;
 	}
-	
+
 	.partners .left-container {
 		padding-right: 20px;
 		text-align: center;
@@ -1201,7 +1269,7 @@ footer {
 	.footer-logo h5 {
 		width: 250px;
 		margin: 0 auto;
-		
+
 	}
 
 
@@ -1232,21 +1300,45 @@ footer {
 		padding-bottom: 30px;
 		border-top: 5px solid #136cfe;
 	}
+
 	.core-values h2 {
 		font-size: 2em;
 	}
-	.lower-split  {
+
+	.lower-split {
 		margin-top: -4vh;
 	}
-	
-	.core-values .title  {
+
+	.core-values .title {
 		font-size: 1rem;
 	}
-	
+
 	/*========*/
-	
+
 	.profile h4 {
 		margin-top: 20px;
+	}
+
+
+	/* ==================== */
+	.video-container {
+		position: relative;
+
+		width: 100%;
+		text-align: left;
+	}
+
+	.video-item {
+		width: 100%;
+		height: 100%;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.close-button {
+		top: 5%;
+
 	}
 }
 
@@ -1256,6 +1348,7 @@ footer {
 	.tac-mobile {
 		text-align: center;
 	}
+
 	.logo {
 		padding: 20px 0px 0px 0px;
 	}
@@ -1323,7 +1416,7 @@ footer {
 		margin-bottom: 20px;
 		box-shadow: 0 1px 4px 0 hsla(0, 0%, 0%, 0.2);
 	}
-	
+
 	.contact {
 		background-size: 60%;
 	}
@@ -1338,7 +1431,7 @@ footer {
 		margin-bottom: 30px;
 		overflow: hidden;
 		background: transparent;
-		
+
 	}
 
 	.contact fieldset {
@@ -1346,7 +1439,7 @@ footer {
 		border-bottom: 2px solid #f1f1f1;
 		border-radius: 0;
 		background-color: none;
-	
+
 	}
 
 	.contact .label-text {
@@ -1357,7 +1450,7 @@ footer {
 	.contact .my-btn-4 {
 		width: 75%;
 	}
-	
+
 	.p-logo-container {
 		border-left: none;
 		height: 100%;
@@ -1366,7 +1459,7 @@ footer {
 	.partners img {
 		margin: 20px 20px;
 	}
-	
+
 	.partners .left-container {
 		padding-right: 20px;
 		text-align: center;
@@ -1376,7 +1469,7 @@ footer {
 		line-height: 1.2rem;
 	}
 
-	
+
 
 	.footer-info {
 		padding: 0;
@@ -1400,7 +1493,7 @@ footer {
 
 	.about-banner h4 {
 		font-size: 1em;
-		padding: 10px 50px; 
+		padding: 10px 50px;
 	}
 
 	.subpage-banner .wrapper-center {
@@ -1415,14 +1508,16 @@ footer {
 		padding-bottom: 30px;
 		border-top: 5px solid #136cfe;
 	}
+
 	.core-values h2 {
 		font-size: 3em;
 	}
-	.lower-split  {
+
+	.lower-split {
 		margin-top: -7vh;
 	}
-	
-	.core-values .title  {
+
+	.core-values .title {
 		font-size: 2rem;
 	}
 
@@ -1476,6 +1571,27 @@ footer {
 	.featured {
 		padding-top: 0;
 	}
+
+	/* ==================== */
+	.video-container {
+		position: relative;
+
+		width: 100%;
+		text-align: left;
+	}
+
+	.video-item {
+		width: 70%;
+		height: 70%;
+		top: 35%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.close-button {
+		top: 5%;
+
+	}
 }
 
 /* Extra Large Screens  */
@@ -1496,7 +1612,7 @@ footer {
 		font-size: 1.5em;
 	}
 
-	
+
 	.wrapper-center {
 		padding-top: 22%;
 	}
@@ -1504,6 +1620,7 @@ footer {
 	.pointer-down {
 		padding-top: 11%;
 	}
+
 	.category-card-img {
 		width: 53%;
 	}
