@@ -23,6 +23,11 @@ body {
 	background-color: #fcfcfc;
 }
 
+abbr[title] {
+  border-bottom: none;
+  cursor: inherit;
+  text-decoration: none;
+}
 
 
 /*start of css declarations*/
@@ -582,8 +587,10 @@ header .about-banner {
 /*PARTNERS*/
 .partners {
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 	background-color: #14294E;
+	border-bottom: 4px solid #136cfe;
+
 }
 
 .p-logo-container {
@@ -689,7 +696,7 @@ header .about-banner {
 .contact form {
 	display: block;
 	width: 100%;
-	background-color: #fcfcfc;
+	background-color: #FCFDFF;
 	border-radius: 20px;
 
 
@@ -726,7 +733,8 @@ header .about-banner {
 	margin-bottom: 2px;
 }
 
-.contact input[class="form-control"] {
+.contact input[class="form-control"],
+.contact textarea {
 	box-shadow: 1px 1px 2px inset rgba(0, 0, 0, 0.1);
 
 }
@@ -873,26 +881,75 @@ footer {
 	background-color: #fcfcfc;
 
 	background: url(../images/solid-spark.png) bottom right no-repeat;
-	background-size: 25%;
+	background-size: 30%;
 }
 
 .profile .label {
+	margin-top: 30px;
 	margin-bottom: 30px;
-	width: 300px;
-	border-bottom-color: #136cfe;
+	width: 180px;
+	border-bottom-color: #225198;
 }
 
-.profile h4,
+
 .profile .content-text {
 	font-size: 1.1rem;
+		color: grey;
 }
 
 .profile h4 {
-	color: #14294E;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.3rem;
+	color: #225198;
 	font-weight: 600;
 }
-.profile .content-text{
-	color: #333;
+
+/*=======*/
+
+.faqs {
+	padding: 40px 0;
+}
+
+.faqs h1 {
+	color: #14294E;
+	font-size: 2em;
+	text-align: center;
+}
+
+
+#accordion .my-btn-5 {
+	font-size: 1rem;
+	/*background-color: red;*/
+	border: none;
+	width: 100%;
+	text-align: left;
+	background-color: transparent;;
+	padding-left: 15px;
+	font-weight: 500;
+	color: #14294E;
+}
+
+#accordion .my-btn-5:focus{
+	color: #136fce;
+	border: none;
+	box-shadow: none;
+}
+
+
+#accordion .card-header {
+	padding: 15px 10px;
+	border-bottom: 3px solid #5089E5;
+
+}
+
+#accordion .card {
+	border-radius: 3px 3px 0px 0px;
+	overflow: hidden;
+	border: none;
+}
+
+#accordion .card-body {
+	border: 1px solid #f5f5f5;
 }
 
 /*MEDIA QUERIES*/
@@ -1084,6 +1141,7 @@ footer {
 	.contact form {
 		width: 100%;
 		margin-bottom: 30px;
+		background: transparent;;
 	}
 
 	.contact fieldset {
@@ -1184,8 +1242,12 @@ footer {
 	.core-values .title  {
 		font-size: 1rem;
 	}
-
-
+	
+	/*========*/
+	
+	.profile h4 {
+		margin-top: 20px;
+	}
 }
 
 /*Tablet Styles*/
@@ -1274,6 +1336,8 @@ footer {
 	.contact form {
 		width: 100%;
 		margin-bottom: 30px;
+		overflow: hidden;
+		background: transparent;
 		
 	}
 
@@ -1283,6 +1347,11 @@ footer {
 		border-radius: 0;
 		background-color: none;
 	
+	}
+
+	.contact .label-text {
+		padding: 0 50px;
+		border: none;
 	}
 
 	.contact .my-btn-4 {
