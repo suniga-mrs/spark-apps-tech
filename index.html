@@ -18,7 +18,11 @@
 
     <!-- bootstrap css -->
     <link rel="stylesheet" type="text/css" href="vendors/bootstrap/css/bootstrap.min.css">
-
+    
+    <!-- aos lib -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <!-- other css -->
     <link rel="stylesheet" type="text/css" href="vendors/animate/animate.css">
     <link rel="stylesheet" href="vendors/owl-carousel/css/owl.carousel.min.css">
@@ -127,10 +131,10 @@
                         <div class="my-nav clearfix">
                             <ul>
                                 <li><a class="nav-hover my-nav-item" href="index.html">Home</a></li>
-                                <li><a class="nav-hover my-nav-item" href="#">Products</a></li>
+                                <li><a class="nav-hover my-nav-item" href="products.html">Products</a></li>
                                 <li><a class="nav-hover my-nav-item" href="about.html">About Us</a></li>
                                 <li><a class="nav-hover my-nav-item" href="faqs.html">FAQs</a></li>
-                                <li><a class="nav-hover my-nav-item" href="#">Contacts</a></li>
+                                <li><a class="nav-hover my-nav-item" href="contact.html">Contacts</a></li>
                             </ul>
                         </div>
                     </div>
@@ -149,8 +153,8 @@
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 col-xl-10 offset-xl-1">
                         <div class="wrapper-center">
-                            <h1>Spark Apps Technologies Inc.</h1>
-                            <h4><span><abbr title="Information and Communication Technology">ICT</abbr> Solutions
+                            <h1 class="animated fadeInUp">Spark Apps Technologies Inc.</h1>
+                            <h4 class="animated fadeInUp"><span><abbr title="Information and Communication Technology">ICT</abbr> Solutions
                                     Provider</span> committed in giving excellent products and
                                 services for your business needs.</h4>
                         </div>
@@ -160,10 +164,10 @@
                     <div class="col-lg-8 offset-lg-2 d-flex justify-content-center">
                         <div class="">
                             <div class="btn-wrap">
-                                <a href="#" class="my-btn my-btn-1">See Products Offered</a>
+                                <a href="products.html" class="my-btn my-btn-1">See Products Offered</a>
                             </div>
                             <div class="btn-wrap">
-                                <a href="#" class="my-btn my-btn-2">Why Us?</a>
+                                <a href="about.html" class="my-btn my-btn-2">Why Us?</a>
                             </div>
                         </div>
                     </div>
@@ -172,7 +176,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="pointer-down animated bounce slow infinite delay-5s">
-                            <a href="#"><i class="fas fa-chevron-down"></i></a>
+                            <a href="#feauture"><i class="fas fa-chevron-down"></i></a>
                         </div>
                     </div>
                 </div>
@@ -210,7 +214,7 @@
                     <div class="col-lg-10 offset-lg-1">
                         <div class="row no-gutters">
                             <div class="col-lg-3 col-md-6">
-                                <div class="card">
+                                <div class="card" data-aos="fade-up">
                                     <img src="assets/images/featured/thumb_dellworkstation.jpg" class="card-img-top img-fluid"
                                         alt="Dell Precision Mobile Workstations">
                                     <div class="card-body">
@@ -224,7 +228,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6">
-                                <div class="card">
+                                <div class="card" data-aos="fade-up" data-aos-delay="300">
                                     <img src="assets/images/featured/thumb_HP-z2.jpg" class="card-img-top img-fluid"
                                         alt="HP Z2 Mini Workstation">
                                     <div class="card-body">
@@ -238,7 +242,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6">
-                                <div class="card">
+                                <div class="card" data-aos="fade-up" data-aos-delay="600">
                                     <img src="assets/images/featured/thumb_DJIinspire2.jpg" class="card-img-top img-fluid"
                                         alt="DJI Inspire 2">
                                     <div class="card-body">
@@ -253,7 +257,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6">
-                                <div class="card align-items-center">
+                                <div class="card align-items-center" data-aos="fade-up" data-aos-delay="900">
                                     <img src="assets/images/featured/thumb_hpt380.jpg"" class=" card-img-top img-fluid"
                                         alt="HP DesignJet T830">
                                     <div class="card-body">
@@ -327,11 +331,11 @@
                 <div class="row">
                     <div class="col-md-8 offset-md-1">
                         <div class="about-content my-auto">
-                            <h2>No Customer Left Behind</h2>
-                            <p>SPARK APPS don’t leave the customers behind. Your success becomes our success. <span
+                            <h2 data-aos="fade-right">No Customer Left Behind</h2>
+                            <p  data-aos="fade-right" data-aos-delay="500">SPARK APPS don’t leave the customers behind. Your success becomes our success. <span
                                     class="d-md-inline d-lg-block">We
                                     listen to your needs and effectively provide ICT solutions that works for you.</span></p>
-                            <a href="#" class="my-btn-3">Learn More</a>
+                            <a href="#" class="my-btn-3" data-aos="fade-right" data-aos-delay="1000">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -555,6 +559,7 @@
 
 
     <!-- Optional JavaScript -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="vendors/jquery/jquery-3.3.1.min.js"></script>
     <script src="vendors/owl-carousel/js/owl.carousel.min.js"></script>

@@ -941,6 +941,12 @@ background: linear-gradient(#1A3666, #14294E); /* W3C, IE 10+/ Edge, Firefox 16+
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.to-contact button {
+	width: 200px;
+	font-weight: 500;
+	border-radius: 30px;
+}
+
 .input-group-prepend {
 	width: 15%;
 }
@@ -949,6 +955,7 @@ background: linear-gradient(#1A3666, #14294E); /* W3C, IE 10+/ Edge, Firefox 16+
 	width: 100%;
 	font-weight: 500;
 }
+
 /*===============*/
 
 
@@ -1064,6 +1071,22 @@ background: linear-gradient(#1A3666, #14294E); /* W3C, IE 10+/ Edge, Firefox 16+
 	right: 0;
 	bottom: 0;
 	z-index: 10;
+}
+
+.products-page  .category-item img {
+	padding: 0;
+
+}
+
+.category-item-grp p {
+	font-size: 0.8em;
+}
+
+.category-item {
+	text-align: center;
+	width: 80px;
+	float: left;
+	margin-right: 20px;
 }
 
 
@@ -1397,6 +1420,12 @@ background: linear-gradient(#1A3666, #14294E); /* W3C, IE 10+/ Edge, Firefox 16+
 		width: 250px;
 		margin: 0 auto;
 
+	}
+
+	/*=============*/
+	.category-item-grp {
+		width: 90%;
+		margin:0 auto;
 	}
 
 

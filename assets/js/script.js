@@ -13,6 +13,8 @@ function onYouTubeIframeAPIReady() {
 
 $(document).ready(function () {
 
+
+
 	$('.nav-toggle').click(function () {
 		$('.nav-toggle').toggleClass('nav-active'),
 			$('.my-nav').toggleClass('my-nav-active');
@@ -88,5 +90,11 @@ $(document).ready(function () {
 		            loop:false
 		        }
 		    }
-		})
+		});
+
+		AOS.init({
+		  useClassNames: true,
+		  initClassName: false,
+		  animatedClassName: 'animated',
+		});
 });
