@@ -384,7 +384,7 @@ header .products-banner {
 
 .products-banner::after {
 	content: "";
-	background: linear-gradient(to bottom, rgba(7, 13, 28, 0.65) 0%, rgba(5, 10, 22, 0.65) 22%, rgba(0, 0, 0, 0) 100%), url(../images/bg-about.jpg);
+	background: linear-gradient(to bottom, rgba(7, 13, 28, 0.65) 0%, rgba(5, 10, 22, 0.65) 22%, rgba(0, 0, 0, 0) 100%), url(../images/bg-products.jpg);
 
 	background-position: bottom center;
 	background-repeat: no-repeat;
@@ -906,13 +906,22 @@ footer {
 	height: 100%;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	border:1px solid red;
-	background: linear-gradient;
+	/*border:1px solid red;*/
+	background: #14294E;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(#194DA0, #14294E);
+background: -o-linear-gradient(#1A3666, #14294E);
+background: linear-gradient(#1A3666, #14294E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .contact-type-a {
 	background-color: #14294E;
 	text-align: center;
+}
+
+.contact-type-a hr {
+	margin-top: 40px;
+	width: 100%;
 }
 
 .contact-type-a h3 {
@@ -998,6 +1007,65 @@ footer {
 	letter-spacing: 1px;
 	font-weight: 600;
 }
+
+
+/*===================*/
+
+.products-page > [class*="category"]{
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	
+}
+
+.products-page > [class*="category"] img {
+	padding: 15px;
+}
+
+.products-page > [class*="category"] p {
+/*	border-left: 2px solid red;
+	margin-top: 10px;
+	padding-left: 20px;*/
+}
+
+.products-page > .category-1 {
+	background-color: #fcfcfc;
+}
+
+.products-page > .category-2 {	
+	position: relative;
+	background: #000;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(right, #000, #14294E);
+	background: -o-linear-gradient(right, #000, #14294E);
+	background: linear-gradient(to left, #000, #14294E);
+
+	color: #fcfcfc;
+}
+
+.products-page > .category-2 * {
+	z-index: 50;
+}
+
+.products-page > .category-2::after {
+	content: "";
+
+
+	background: url(../images/products/bg-color.jpeg) bottom left no-repeat;
+
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: absolute;
+
+	opacity: 0.2;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+}
+
 
 /*=====*/
 .profile {
@@ -1372,8 +1440,30 @@ footer {
 		font-size: 1rem;
 	}
 
+	.to-contact .input-group {
+		width: 100%;
+	}
+
+	.input-group-prepend {
+		width: 25%;
+	}
+
+	.contact-type-a h3 {
+		font-size: 2.1em;
+		color: #ffc40e;
+		text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	}
+
+	.to-contact p {
+		color: #fcfcfc;
+	}
+
+
 
 	/*========*/
+	.profile {
+		padding-top: 30px;
+	}
 
 	.profile h4 {
 		margin-top: 20px;
@@ -1398,7 +1488,6 @@ footer {
 
 	.close-button {
 		top: 5%;
-
 	}
 
 	/*================ OWL */
