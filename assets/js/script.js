@@ -69,4 +69,24 @@ $(document).ready(function () {
 	
 	  });
 
+		$('.owl-carousel').owlCarousel({
+		    loop:true,
+		    margin:10,
+		    responsiveClass:true,
+		    responsive:{
+		        0:{
+		            items:1,
+		            nav:true
+		        },
+		        426:{
+		            items:2,
+		            nav:true
+		        },
+		        900:{
+		            items:4,
+		            nav:false,
+		            loop:false
+		        }
+		    }
+		})
 });

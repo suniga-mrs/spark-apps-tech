@@ -377,8 +377,27 @@ nav {
 
 /*========*/
 
-header .about-banner {
-	height: 60vh;
+header .about-banner,
+header .products-banner {
+	height: 50vh;
+}
+
+.products-banner::after {
+	content: "";
+	background: linear-gradient(to bottom, rgba(7, 13, 28, 0.65) 0%, rgba(5, 10, 22, 0.65) 22%, rgba(0, 0, 0, 0) 100%), url(../images/bg-about.jpg);
+
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: absolute;
+
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
 }
 
 .about-banner::after {
@@ -412,6 +431,8 @@ header .about-banner {
 .about-banner h4 {
 	font-size: 0.5em;
 }
+
+/*================*/
 
 .solid-bg {
 	height: 120px;
@@ -465,17 +486,18 @@ header .about-banner {
 	font-weight: 600;
 	letter-spacing: 1px;
 	margin-bottom: 0.5rem;
-	padding: 0 20px;
+	/*padding: 0 20px;*/
 	color: #ffc40e;
 }
 
 .featured .card-text {
-	padding: 0 20px;
+	/*padding: 0 20px;*/
 	font-size: 0.9rem;
 	line-height: 1rem;
 }
 
 .featured .card-body-wrapper {
+	padding: 0 20px;
 	position: absolute;
 	top: 50%;
 	transform: translate(0, -55%);
@@ -483,9 +505,11 @@ header .about-banner {
 
 .featured .card-body:hover {
 	opacity: 1;
-	cursor: pointer;
 }
 
+.featured button:hover {
+	cursor: pointer;
+}
 
 /* =================== VIDEO CONTAINER */
 
@@ -517,7 +541,7 @@ header .about-banner {
 .video-container {
 	position: relative;
 	padding-bottom: 56%;
-	top: 20%;
+	top: 15%;
 	width: 100%;
 	text-align: left;
 }
@@ -879,11 +903,45 @@ footer {
 /*=============================== subpages */
 
 .to-contact {
-	height: 25vh;
-	background-color: #fcfcfc;
+	height: 100%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border:1px solid red;
+	background: linear-gradient;
 }
 
-/*=========*/
+.contact-type-a {
+	background-color: #14294E;
+	text-align: center;
+}
+
+.contact-type-a h3 {
+	color: #ffc40e;
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.to-contact p {
+	color: #fcfcfc;
+}
+
+.to-contact .input-group {
+	border-radius: 30px;
+	width: 70%;
+	margin: 0 auto;
+	overflow: hidden;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.input-group-prepend {
+	width: 15%;
+}
+
+.input-group-prepend button {
+	width: 100%;
+	font-weight: 500;
+}
+/*===============*/
+
 
 .core-values {
 	padding-bottom: 50px;
@@ -891,8 +949,7 @@ footer {
 	background-color: #fcfcfc;
 	background: url(../images/bg-values.jpg) center center no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
-
+	/*background-attachment: fixed;*/
 }
 
 .core-values h2 {
@@ -913,11 +970,13 @@ footer {
 	margin-top: -5vh;
 	z-index: 20;
 }
-
+.core-values .owl-carousel {
+	height: 20%;
+}
 .core-val-card {
 	padding: 20px;
 	/*height: 100%;*/
-	width: 90%;
+	width: 	80%;
 	margin: 0 auto;
 
 	background-color: #fff;
@@ -934,7 +993,7 @@ footer {
 .core-values .title {
 	text-align: center;
 	margin-top: 20px;
-	color: #fcfcfc;
+	color: #14294E;
 	font-size: 1em;
 	letter-spacing: 1px;
 	font-weight: 600;
@@ -943,11 +1002,11 @@ footer {
 /*=====*/
 .profile {
 	height: 100%;
-	padding: 50px 0;
+	padding: 20px 0 50px 0;
 	background-color: #fcfcfc;
 
 	background: url(../images/solid-spark.png) bottom right no-repeat;
-	background-size: 30%;
+	background-size: 25%;
 }
 
 .profile .label {
@@ -1139,7 +1198,7 @@ footer {
 	}
 
 	.featured .card-text {
-		padding: 0 20px;
+		/*padding: 0 20px;*/
 		font-size: 1rem;
 		line-height: 1rem;
 	}
@@ -1313,6 +1372,7 @@ footer {
 		font-size: 1rem;
 	}
 
+
 	/*========*/
 
 	.profile h4 {
@@ -1339,6 +1399,16 @@ footer {
 	.close-button {
 		top: 5%;
 
+	}
+
+	/*================ OWL */
+
+	.owl-nav {
+		color: white;
+		font-size: 2em;
+		font-weight: 500;
+		text-align: center;
+		padding: 20px;
 	}
 }
 
