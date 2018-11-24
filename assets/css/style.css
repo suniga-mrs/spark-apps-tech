@@ -997,7 +997,7 @@ background: linear-gradient(#1A3666, #14294E); /* W3C, IE 10+/ Edge, Firefox 16+
 
 .core-val-card img {
 	display: block;
-	max-width: 100%;
+	max-width: 70%;
 	margin: 0 auto;
 }
 
@@ -1462,6 +1462,10 @@ background: linear-gradient(#1A3666, #14294E); /* W3C, IE 10+/ Edge, Firefox 16+
 
 	.core-values .title {
 		font-size: 1rem;
+	}
+
+	.core-val-card img {
+		max-width: 90%;
 	}
 
 	.to-contact .input-group {
