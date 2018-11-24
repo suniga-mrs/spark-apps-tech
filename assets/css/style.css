@@ -783,17 +783,23 @@ header .products-banner {
 }
 
 .social-links {
-	border-radius: 5px;
+	/* border-radius: 5px; */
 	overflow: hidden;
-	width: 30px;
-	height: 30px;
+	width: 20px;
+	height: 25px;
+	border-radius: 1px;
 	display: inline-block;
-
+	cursor: pointer;
 	transition: 0.2s ease;
 }
 
 .social-logo-a {
 	fill: #555;
+}
+
+
+footer .social-logo-b {
+	fill: #95A8C6;
 }
 
 .social-logo-a:hover {
@@ -862,10 +868,12 @@ header .products-banner {
 
 
 /*FOOTER*/
+
 footer {
-	height: 100%;
+	min-height: 10vh;
 	background-color: #14294E;
 	padding-top: 50px;
+
 }
 
 .footer-logo {
@@ -916,7 +924,10 @@ footer {
 	background-color: #0B182D;
 }
 
-
+.call-to-action {
+	height: 20vh;
+	background-color: pink;
+}
 
 
 /*=============================== subpages */
@@ -1202,6 +1213,18 @@ footer {
 #accordion .card-body {
 	border: 1px solid #f5f5f5;
 }
+
+
+
+.main-container {
+	min-height: 83vh;
+	overflow: hidden;
+}
+
+.full-height {
+	min-height: 100%;
+}
+
 
 /*MEDIA QUERIES*/
 
@@ -1883,5 +1906,5 @@ footer {
 		padding-top: 15%;
 	}
 
-
+	
 }
