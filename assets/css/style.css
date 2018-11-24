@@ -592,6 +592,7 @@ header .products-banner {
 	margin: 0 auto;
 	max-height: 200px;
 	transition: 0.2s ease;
+	
 }
 
 .category-card:hover {
@@ -626,6 +627,15 @@ header .products-banner {
 	font-size: 0.8rem;
 	line-height: 0.9rem;
 	overflow: hidden;
+}
+
+.category-card a {
+	text-decoration: none;
+	color: #14294E;
+}
+
+.category-card:active {
+	box-shadow: 0px 0px 6px 0 rgba(255, 196, 14, 0.4);
 }
 
 
@@ -667,7 +677,7 @@ header .products-banner {
 	padding-bottom: 5px;
 	color: #fcfcfc;
 	border-bottom: 2px solid #ffc40e;
-	transition: 0.2s;
+	transition: 0.5s;
 }
 
 .my-btn-3:hover {
@@ -945,11 +955,25 @@ background: linear-gradient(#1A3666, #14294E); /* W3C, IE 10+/ Edge, Firefox 16+
 	width: 15%;
 }
 
+
 .input-group-prepend button {
 	width: 100%;
 	font-weight: 500;
 	border-radius: none;
 }
+
+
+.to-contact #prod-btn[type="button"] {
+	width: 200px;
+	font-weight: 500;
+	border-radius: 30px;
+}
+
+.modal-body > * {
+	margin-bottom: 10px;
+}
+
+
 
 /*===============*/
 
