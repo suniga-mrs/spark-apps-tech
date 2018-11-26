@@ -736,6 +736,13 @@ header .products-banner {
 	background-attachment: fixed;
 }
 
+.spark-bg {
+	min-height: 70vh;
+	background: url(../images/spark.png) right bottom no-repeat;
+	background-size: 35%;
+	background-attachment: fixed;
+}
+
 .contact .label-text {
 	padding-top: 0px;
 	margin-bottom: 30px;
@@ -1185,22 +1192,26 @@ footer {
 	width: 100%;
 	text-align: left;
 	background-color: transparent;
-	;
+		/*border: 1px solid red;*/
 	padding-left: 15px;
 	font-weight: 500;
 	color: #14294E;
+	/*height: 30px;*/
 }
 
-#accordion .my-btn-5:focus {
+#accordion .my-btn-5:focus,
+#accordion .my-btn-5:active {
 	color: #136fce;
 	border: none;
 	box-shadow: none;
+
 }
 
 
 #accordion .card-header {
-	padding: 15px 10px;
+	min-height: 100%;
 	border-bottom: 3px solid #5089E5;
+	cursor: pointer;
 
 }
 
@@ -1214,6 +1225,11 @@ footer {
 	border: 1px solid #f5f5f5;
 }
 
+
+#accordion p {
+	display: inline;
+	
+}
 
 
 .main-container {
@@ -1589,6 +1605,21 @@ footer {
 		text-align: center;
 		padding: 20px;
 	}
+
+	.spark-bg {
+		background-size: 80%;
+	}
+
+	#accordion .card-header {
+		padding: 5px 10px;
+	}
+
+	#accordion .my-btn-5 {
+		padding-left: 5px;
+		/*overflow: hidden;*/
+	}
+
+
 }
 
 /*Tablet Styles*/
