@@ -879,7 +879,7 @@ footer .social-logo-b {
 footer {
 	min-height: 10vh;
 	background-color: #14294E;
-	padding-top: 50px;
+	padding-top: 30px;
 
 }
 
@@ -942,7 +942,7 @@ footer {
 .to-contact {
 	height: 100%;
 	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-bottom: 10px;
 	/*border:1px solid red;*/
 	background: #14294E;
 	/* fallback for old browsers */
@@ -1228,7 +1228,7 @@ footer {
 
 #accordion p {
 	display: inline;
-	
+
 }
 
 
@@ -1611,13 +1611,13 @@ footer {
 	}
 
 	#accordion .card-header {
-		padding: 5px 10px;
+		/*padding: 5px 20px;*/
 	}
 
-	#accordion .my-btn-5 {
-		padding-left: 5px;
-		/*overflow: hidden;*/
+	.solid-bg {
+		height: 80px;
 	}
+
 
 
 }
